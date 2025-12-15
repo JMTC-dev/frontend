@@ -34,9 +34,9 @@
 }
 
 body {
-  --background-image: var(--wooden);
+  --background-image: var(--nightsky);
   --main-color: var(--snow);
-  font-family: var(--simple-font);
+  font-family: var(--simple-s);
 }
 
 .grid {
