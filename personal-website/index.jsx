@@ -1,4 +1,4 @@
-import React from "react";
+import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 const { useState, useEffect, useRef } = React;
 const clientID = "t-FQWYk2PUt13LidWIblzu7SNd9HVOQsK3QA7Lg1Mg4";
@@ -72,5 +72,7 @@ const App = (props) => {
 };
 
 createRoot(document.getElementById("root")).render(
-  <App name="Jack" emoji="🍔" />
+  <StrictMode>
+    <App name="Jack" emoji="🍔" />
+  </StrictMode>
 );
