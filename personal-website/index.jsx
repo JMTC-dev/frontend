@@ -20,7 +20,7 @@ const loadData = (options) => {
 const App = (props) => {
   let [photos, setPhotos] = useState([]);
 
-  let [query, setQuery] = useState("");
+  let [query, setQuery] = useState("dog");
   const queryInput = useRef(null);
 
   const numberOfPhotos = 20;
@@ -58,8 +58,8 @@ const App = (props) => {
                       <a href={photo.user.links.html + utm}>
                         {photo.user.name}
                       </a>
-                      <span>on</span>
-                      <a href={"https://unsplash.com" + utm}>Unsplash</a>
+                      <span> on</span>
+                      <a href={"https://unsplash.com" + utm}> Unsplash</a>
                     </span>
                   </div>
                 </div>
