@@ -1,3 +1,24 @@
-body {
-  background-color: red;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.search-input,
+.logo {
+  display: block;
+}
+
+.search-input {
+  width: 400px;
+}
+
+.logo {
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.content {
+  width: fit-content;
+  margin: 100px auto 0;
 }
