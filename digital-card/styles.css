@@ -14,10 +14,34 @@ body {
   width: fit-content;
   margin: 0 auto;
   gap: 30px;
-  background-color: hsl(218, 68%, 88%);
-  border-bottom: 6px solid hsl(279, 92%, 85%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: hsl(214, 23%, 56%);
+  color: hsl(219, 37%, 17%);
+
+  /*hsl(212, 29%, 36%)*/
+  box-shadow: -9px 9px 0px hsl(212, 29%, 36%);
+  border-radius: 10px;
+  transition: 0.2s all;
+  animation: slide-in ease 1.5s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: -12px 12px 0px hsl(212, 29%, 36%);
 }
 
 .card-content {
   text-align: center;
+}
+
+@keyframes slide-in {
+  from {
+    translate: 0 10vh;
+    opacity: 0%;
+  }
+
+  to {
+    translate: 0 0;
+    opacity: 100%;
+  }
 }
