@@ -1,0 +1,39 @@
+@font-face {
+  font-family: Wildchill;
+  src: url("./Wildchill.ttf");
+}
+
+body {
+  color: #82a5ca;
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  text-align: center;
+}
+
+#hero {
+  background-image: url("./images/galaxy.webp");
+  background-size: cover;
+  padding: 40px 0;
+}
+
+h1 {
+  text-shadow: 0px 0px 4px black;
+}
+
+.btn {
+  padding: 6px 12px;
+  font-family: inherit;
+  border: none;
+  color: #82a5ca;
+  font-weight: 800;
+  background-color: white;
+}
+
+.cta {
+  border-bottom: 4px solid white;
+}
+
+#main-logo {
+  max-width: 200px;
+}
