@@ -3,7 +3,7 @@ body {
   font-family: "Happy Monkey", system-ui;
   font-weight: 400;
   font-style: normal;
-  background-color: #a2d2ff;
+  background: linear-gradient(#a2d2ff, #efb0c9);
   color: #ffffff;
 }
 
@@ -35,4 +35,67 @@ body {
 
 .bday-date {
   margin: 0;
+}
+
+.prize-image {
+  height: 400px;
+  margin: 0 auto;
+  max-width: 400px;
+  border: 8px solid white;
+  border-radius: 5%;
+  background: url("./images/gift-cover.jpg") center/cover no-repeat;
+}
+
+.gift-section {
+  margin-top: 50px;
+}
+
+.prize-header {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.prize-subheader {
+  margin: 10px 0px 20px 0px;
+}
+
+#prize-image-happy:hover {
+  background: url("./images/happy.gif") center/cover no-repeat;
+}
+
+#prize-image-hot:hover {
+  background: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTZ3bjZ1ZGFibjkzZHRkc3FzZ2ZieXJ5bmpua3BiMjdmbjdnZjFubCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ukmZRuEqc2Rbi/giphy.gif")
+    center/cover no-repeat;
+}
+
+#prize-image-genius:hover {
+  background: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTBkMTM2bTl0MnQ0cWQ1ZTExbW51aWQ2cjN5enYwN2JpbTJvZmw2MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NlOGOI5HB8BLUPrm8I/giphy.gif")
+    center/cover no-repeat;
+}
+
+#prize-image-badass:hover {
+  background: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHE0dHI3dXZtNTY2ZWQ2c252YnF2ZDI5ZzZkMXRqd3JiYXIwaXFvYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kiBcwEXegBTACmVOnE/giphy.gif")
+    center/cover no-repeat;
+}
+
+#prize-image-cheers {
+  height: 200px;
+}
+
+#prize-image-cheers:hover {
+  background: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2JhMXRpOWJ6YnZqdTdlb3VpdnFmZmxubmh6aG9uNG94eW50N25veCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BPJmthQ3YRwD6QqcVD/giphy.gif")
+    center/cover no-repeat;
+}
+
+.footer {
+  margin: 50px auto 30px auto;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  color: blue;
 }
