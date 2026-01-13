@@ -66,13 +66,16 @@ h6 {
   text-wrap: balance;
 }
 
+hero {
+  max-width: 720px;
+}
+
 body {
-  background: url("https://images.unsplash.com/photo-1749250732165-746746959bb8?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+  background: url("https://kagi.com/proxy/j-c-park-goblin-village.jpg?c=_4gZ29C-kAFUzNwuJXNczatZ-BADzHJLKeJUx1HzvF2I6wMeFYg74PWWGCL28ZcDZZ8S_OvYbTSwu8gzMFhaJPY8VYM1-JBrK8wx7uyIHK--KZXRPneXj_R2TqLZvDqX6vWd7g-8DSdwEygVDI886A%3D%3D")
     no-repeat center/cover;
   background-color: hsla(0, 0%, 0%, 0.544);
   background-blend-mode: overlay;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: fantasy;
   text-align: center;
   font-weight: bold;
   color: white;
@@ -101,6 +104,7 @@ button {
   width: 100%;
   max-width: 200px;
   margin-bottom: 5px;
+  font-size: 22px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -110,9 +114,17 @@ button:active {
 }
 
 #increment-btn {
-  background: darkred;
+  background: hsl(164, 78%, 34%);
+  text-shadow: 0px 0px 3px black;
+  box-shadow: 0px 4px 3px hsla(0, 0%, 13%, 0.754);
 }
 
 #save-btn {
-  background: darkgreen;
+  background: hsl(194, 67%, 44%);
+  text-shadow: 0px 0px 3px black;
+  box-shadow: 0px 4px 3px hsla(0, 0%, 13%, 0.754);
+}
+
+#save-el {
+  font-size: 24px;
 }
