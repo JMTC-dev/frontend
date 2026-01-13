@@ -66,10 +66,6 @@ h6 {
   text-wrap: balance;
 }
 
-hero {
-  max-width: 720px;
-}
-
 body {
   background: url("https://kagi.com/proxy/j-c-park-goblin-village.jpg?c=_4gZ29C-kAFUzNwuJXNczatZ-BADzHJLKeJUx1HzvF2I6wMeFYg74PWWGCL28ZcDZZ8S_OvYbTSwu8gzMFhaJPY8VYM1-JBrK8wx7uyIHK--KZXRPneXj_R2TqLZvDqX6vWd7g-8DSdwEygVDI886A%3D%3D")
     no-repeat center/cover;
@@ -94,6 +90,8 @@ h2 {
 
 .hero {
   min-height: 100vh;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 button {
