@@ -1,4 +1,4 @@
-[] Add a new game button
-[] Highlight the leader
+[x] Add a new game button
+[x] Highlight the leader
 [] Add a few more counters (e.g. periods, fouls, timer)
 [] Change the design

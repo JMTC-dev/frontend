@@ -8,13 +8,56 @@
   </head>
   <body>
     <div class="container">
-      <div>
+      <div id="home-scoreboard" class="scoreboard">
+        <div class="foul-header">
+          <h3 class="period-title">Foul</h3>
+          <button type="button" class="btn" id="home-foul-btn-1">+1</button>
+        </div>
+        <p id="home-foul" class="period-value">0</p>
+
         <h3 class="score-team">HOME</h3>
         <p id="home-score" class="score">0</p>
+        <div class="btns">
+          <button type="button" class="btn" id="home-btn-1">+1</button>
+          <button type="button" class="btn" id="home-btn-2">+2</button>
+          <button type="button" class="btn" id="home-btn-3">+3</button>
+        </div>
       </div>
-      <div>
+      <div id="timer-board" class="time-scoreboard">
+        <div>
+          <h3 class="period-title">PERIOD</h3>
+          <p id="period" class="period-value">1st</p>
+        </div>
+        <h3 class="score-team">TIMER</h3>
+        <p id="timer" class="score">00:00</p>
+
+        <div id="timer-btns-container">
+          <div id="timer-btns">
+            <button type="button" class="btn" id="timer-min-btn">+1m</button>
+            <button type="button" class="btn" id="manage-timer-btn">
+              Start Timer
+            </button>
+            <button type="button" class="btn" id="timer-reset-btn">
+              Reset Timer
+            </button>
+            <button type="button" class="btn" id="timer-secs-btn">+10s</button>
+          </div>
+          <button type="button" class="btn" id="new-game">New Game</button>
+        </div>
+      </div>
+      <div id="guest-scoreboard" class="scoreboard">
+        <div class="foul-header">
+          <h3 class="period-title">Foul</h3>
+          <button type="button" class="btn" id="guest-foul-btn-1">+1</button>
+        </div>
+        <p id="guest-foul" class="period-value">0</p>
         <h3 class="score-team">GUEST</h3>
         <p id="guest-score" class="score">0</p>
+        <div class="btns">
+          <button type="button" class="btn" id="guest-btn-1">+1</button>
+          <button type="button" class="btn" id="guest-btn-2">+2</button>
+          <button type="button" class="btn" id="guest-btn-3">+3</button>
+        </div>
       </div>
     </div>
     <script src="./index.js"></script>
