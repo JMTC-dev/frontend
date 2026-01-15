@@ -24,20 +24,27 @@
         </div>
       </div>
       <div id="timer-board" class="time-scoreboard">
-        <div>
+        <div class="period-container">
           <h3 class="period-title">PERIOD</h3>
-          <p id="period" class="period-value">1st</p>
+          <div class="period-info">
+            <button type="button" class="btn" id="period-decrease-btn">
+              Prev
+            </button>
+            <p id="period" class="period-value">1st</p>
+            <button type="button" class="btn" id="period-increase-btn">
+              Next
+            </button>
+          </div>
         </div>
         <h3 class="score-team">TIMER</h3>
         <p id="timer" class="score">00:00</p>
-
         <div id="timer-btns-container">
           <div id="timer-btns">
             <button type="button" class="btn" id="timer-min-btn">+1m</button>
             <button type="button" class="btn" id="manage-timer-btn">
               Start Timer
             </button>
-            <button type="button" class="btn" id="timer-reset-btn">
+            <button type="button" class="btn" id="reset-timer-btn">
               Reset Timer
             </button>
             <button type="button" class="btn" id="timer-secs-btn">+10s</button>

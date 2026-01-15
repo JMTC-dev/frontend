@@ -39,6 +39,7 @@ body {
   font-size: 84px;
   color: white;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .btns {
@@ -130,13 +131,24 @@ body {
   font-size: 32px;
   margin: 0;
   border-radius: 10px;
-  margin-bottom: 30px;
 }
 
 .period-title {
   color: white;
   font-size: 28px;
   margin: 10px 0;
+}
+
+.period-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.period-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (width < 768px) {
@@ -154,5 +166,15 @@ body {
 
   #new-game {
     margin: 20px 0px;
+  }
+
+  #timer-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #reset-timer-btn {
+    grid-column: 2;
+    grid-row: 2;
   }
 }
