@@ -155,11 +155,11 @@ function updateTimer(type) {
 let intervalId;
 function manageTimer(type) {
   if (
-    (type === "start" && manageTimerBtn.textContent === "START TIMER") ||
-    (type === "start" && manageTimerBtn.textContent === "RESUME TIMER")
+    type === "start" &&
+    (manageTimerBtn.textContent === "START TIMER" ||
+      manageTimerBtn.textContent === "RESUME TIMER")
   ) {
     startTimer();
-    console.log(intervalId);
   } else if (type === "start" && manageTimerBtn.textContent === "PAUSE TIMER") {
     pauseTimer();
   } else if (type === "reset") {
