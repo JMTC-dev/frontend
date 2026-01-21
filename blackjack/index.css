@@ -16,3 +16,17 @@ h1 {
 #message-el {
   font-style: italic;
 }
+
+button {
+  color: hsl(147, 98%, 22%);
+  background-color: goldenrod;
+  max-width: 150px;
+  width: 100%;
+  border: none;
+  font-weight: bold;
+  padding: 5px 0px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 2px;
+  margin-bottom: 5px;
+}

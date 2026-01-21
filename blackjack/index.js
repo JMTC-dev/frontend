@@ -6,12 +6,41 @@ let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
 
-if (sum <= 20) {
-  console.log("Do you want to draw a new card?");
-} else if (sum === 21) {
-  console.log("You've won!");
-  hasBlackJack = true;
-} else {
-  console.log("You've lost!");
-  isAlive = false;
+let message = "";
+
+let startButtonEl = document.getElementById("start-btn-el");
+let messageEl = document.getElementById("message-el");
+let sumEl = document.getElementById("sum-el");
+let cardsEl = document.getElementById("cards-el");
+let newCardButtonEl = document.getElementById("new-card-btn-el");
+
+function startGame() {
+  cardsEl.textContent = "Cards: " + firstCard + " " + secondCard;
+  sumEl.textContent = "Sum: " + sum;
+  if (sum <= 20) {
+    message = "Do you want to draw a new card?";
+  } else if (sum === 21) {
+    message = "You've won!";
+    hasBlackJack = true;
+  } else {
+    message = "You've lost!";
+    isAlive = false;
+  }
+  messageEl.textContent = message;
 }
+
+function newCard() {
+  message = "Drawing a new card from the deck!";
+  messageEl.textContent = message;
+  let card = 6;
+  sum += card;
+  startGame();
+}
+
+startButtonEl.addEventListener("click", (e) => {
+  startGame();
+});
+
+newCardButtonEl.addEventListener("click", (e) => {
+  newCard();
+});
