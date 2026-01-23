@@ -1,5 +1,6 @@
 let firstCard = 11;
 let secondCard = 10;
+let cards = [firstCard, secondCard];
 
 let sum = firstCard + secondCard;
 
@@ -15,7 +16,11 @@ let cardsEl = document.getElementById("cards-el");
 let newCardButtonEl = document.getElementById("new-card-btn-el");
 
 function startGame() {
-  cardsEl.textContent = "Cards: " + firstCard + " " + secondCard;
+  renderGame();
+}
+
+function renderGame() {
+  cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
   sumEl.textContent = "Sum: " + sum;
   if (sum <= 20) {
     message = "Do you want to draw a new card?";
@@ -34,7 +39,7 @@ function newCard() {
   messageEl.textContent = message;
   let card = 6;
   sum += card;
-  startGame();
+  renderGame();
 }
 
 startButtonEl.addEventListener("click", (e) => {
