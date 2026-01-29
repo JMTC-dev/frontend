@@ -1,3 +1,9 @@
+:root {
+  color-scheme: light dark;
+  --light-bg: hsla(152, 81%, 96%, 1);
+  --dark-bg: hsla(215, 28%, 17%, 1);
+}
+
 body {
   background: rgb(19, 19, 19);
   font-family: "Inter", sans-serif;
@@ -12,7 +18,7 @@ body {
 }
 
 h1 {
-  color: white;
+  color: light-dark(rgb(45, 45, 45), white);
   font-weight: 800;
   font-size: 40px;
   margin: 0;
@@ -33,7 +39,7 @@ nav {
   margin: 0;
   font-size: 20px;
   font-weight: 300;
-  color: hsla(255, 5%, 84%, 1);
+  color: light-dark(rgba(27, 27, 27, 0.697), rgba(213, 212, 216, 0.433));
 }
 
 #passwords {
@@ -64,23 +70,116 @@ nav {
 }
 
 #flavoured-header {
-  color: hsl(144, 70%, 58%);
+  color: light-dark(hsl(144, 70%, 40%), hsl(144, 70%, 58%));
   margin: 0;
 }
 
 .container {
-  padding: 90px 40px;
+  padding: 40px 40px;
+}
+
+.filter-btn {
+  padding: 30px 15px;
+  border-radius: 6px;
+  background-color: hsla(215, 12%, 42%, 0.8);
+  border: 2px solid hsl(215, 28%, 75%, 0.8);
+  color: hsla(215, 60%, 92%, 0.8);
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.active {
+  background-color: hsla(215, 62%, 61%, 0.8);
+}
+
+.filter-btn:hover {
+  transform: scale(0.95);
+}
+
+.filter-btn:active {
+  transform: scale(0.98);
 }
 
 .card {
   margin: 0 auto;
   margin-top: 30px;
-  background-color: hsla(215, 28%, 17%, 1);
+  background-color: light-dark(var(--light-bg), var(--dark-bg));
   max-width: 550px;
   width: 100%;
-  height: 550px;
+  min-height: 550px;
+  border-radius: 10px;
+}
+
+label {
+  color: white;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 50px;
+  background-color: light-dark(var(--light-bg), var(--dark-bg));
+}
+
+#password-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.password {
+  background-color: hsl(215, 30%, 22%);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  color: hsl(142, 93%, 65%);
+  margin: 0;
+  transition: all 0.2s;
+}
+
+.password:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 1px hsl(215, 30%, 13%);
+}
+
+.password:active {
+  transform: scale(0.98);
+}
+
+#password-length,
+#number-of-passwords {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: light-dark(hsla(0, 0%, 40%, 0.516), hsla(0, 0%, 2%, 0.516));
+}
+
+label {
+  color: light-dark(rgb(63, 62, 62), white);
 }
 
 #flavoured-header {
   display: block;
+}
+
+#copy-password-status {
+  color: light-dark(rgb(63, 62, 62), white);
+  font-size: 18px;
+}
+
+.light {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
 }
