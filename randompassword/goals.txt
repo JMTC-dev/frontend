@@ -1,0 +1,5 @@
+- Ability to set password length
+- Add "copy-on-click"
+- Toggle "symbols" and "numbers"
+- Ability to set number of passwords generated
+- Light & dark mode

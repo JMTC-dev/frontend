@@ -1,0 +1,86 @@
+body {
+  background: rgb(19, 19, 19);
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  font-family: "Karla", sans-serif;
+  margin-bottom: 60px;
+}
+
+h1 {
+  color: white;
+  font-weight: 800;
+  font-size: 40px;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+#theme-btn {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+#subheading-text {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+  color: hsla(255, 5%, 84%, 1);
+}
+
+#passwords {
+  border-top: 1px solid hsl(215, 28%, 25%);
+  margin-top: 35px;
+}
+
+#generate-password-btn {
+  padding: 10px 15px;
+  color: white;
+  font-family: inherit;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: hsl(160, 84%, 39%);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#generate-password-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 1px rgba(15, 163, 114, 0.383);
+}
+
+#generate-password-btn:active {
+  transform: scale(0.98);
+}
+
+#flavoured-header {
+  color: hsl(144, 70%, 58%);
+  margin: 0;
+}
+
+.container {
+  padding: 90px 40px;
+}
+
+.card {
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: hsla(215, 28%, 17%, 1);
+  max-width: 550px;
+  width: 100%;
+  height: 550px;
+}
+
+#flavoured-header {
+  display: block;
+}
